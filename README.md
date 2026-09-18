@@ -48,9 +48,10 @@ Fluffy 里取消勾选或删除。
 
 ## 附注
 
-截图中的角色皮肤是 mod「理科魔女 / Witch Shinano」（作者 Fruit milk，
-https://space.bilibili.com/2438342）。本 mod 不分发它，也不依赖它。
-法杖配饰的造型参考了那个角色的设计。
+截图中的角色皮肤是 mod「理科魔女 / Witch Shinano」，作者 Fruit milk。
+
+- 主页：[space.bilibili.com/2438342](https://space.bilibili.com/2438342)
+- 本 mod 不分发它，也不依赖它。法杖配饰的造型参考了那个角色的设计。
 
 ## 许可
 
