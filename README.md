@@ -6,6 +6,12 @@
 
 ![](previews/preview_staff.jpg)
 
+实机：
+
+| 剑盾形态 | 防御中 | 斧形态 |
+|---|---|---|
+| ![](previews/sword.png) | ![](previews/defend.png) | ![](previews/axe.png) |
+
 ## 下载
 
 [RuneStaff-v1.0.zip](RuneStaff-v1.0.zip)
@@ -39,6 +45,12 @@ Fluffy 里取消勾选或删除。
 | 法阵闪烁 | 装过 ArmorVariantManager 且配过这把武器的显隐。删掉 `reframework\data\ArmorVariantManager\it0900_0021.json` |
 
 不需要"防御时才显示"的话，删掉 `rune_guard_circle.lua`，法阵就常显。
+
+## 附注
+
+截图中的角色皮肤是 mod「理科魔女 / Witch Shinano」（作者 Fruit milk，
+https://space.bilibili.com/2438342）。本 mod 不分发它，也不依赖它。
+法杖配饰的造型参考了那个角色的设计。
 
 ## 许可
 
