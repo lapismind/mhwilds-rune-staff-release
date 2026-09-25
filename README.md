@@ -4,28 +4,24 @@
 
 替换武器：**白炽斧耶利米 / 炽光斧耶利米**
 
-![](previews/preview_staff.jpg)
+![](previews/axe.jpg)
 
 实机：
 
-| 持杖 | 斧形态 |
+| 剑盾形态 · 防御中 | 站立 |
 |---|---|
-| ![](previews/game_staff.jpg) | ![](previews/game_axe.jpg) |
-
-杖头特写与斜视：![](previews/head_closeup.jpg) ![](previews/weapon_tilt.jpg)
+| ![](previews/shield.jpg) | ![](previews/stance.jpg) |
 
 ## 下载
 
-[RuneStaff-v1.1.zip](RuneStaff-v1.1.zip)
+[RuneStaff-v1.2.zip](RuneStaff-v1.2.zip)
 
-## 更新（v1.1）
+## 更新（v1.2）
 
-- **杖头**：回到原始设计做保形精修——双环、斜向三齿、长针、蓝色轴心与挂饰都保留，补了局部倒角与曲面修整，清掉退化薄片。
-- **杖身**：重建连续杆体、缠带与尾环，修掉重拓扑留下的断续和碎面。
-- **材质**：金属、深蓝表面、宝石分区控制反射与粗糙度，不再整根一个手感；法阵改用平坦法线，不再吃原版武器的凹凸贴图。
-- **法阵**：发光单独控制，外环与指针更清楚；蓝膜加了柔和渐变，星纹提亮。
-
-v1.0 → v1.1 是同一套设计的一次精修，替换目标、安装方式、法阵显隐逻辑都没有变。
+- **法阵改成双态**：剑盾形态举盾防御时浮现完整的星钟法阵；切到斧形态，法阵内面变成两把新月刃，共用外圈与罗马数字环。两态靠读取武器形态切换，不延迟、不需要额外动作。
+- **蓝膜光感**：盾面与月牙各自一套 2048×512 图集，中心降低饱和度、向边缘过渡到冷蓝；粗糙度从中心约 0.48 过渡到边缘约 0.32，法线只加低幅缓曲率。
+- **蓝色轴心**换成独立的抛光宝石材质。
+- **杖头与颈部**局部曲面精修。
 
 ## 前置
 
@@ -34,13 +30,15 @@ v1.0 → v1.1 是同一套设计的一次精修，替换目标、安装方式、
 
 ## 安装
 
-把 `RuneStaff-v1.1.zip` 拖进 Fluffy Mod Manager，启用。
+把 `RuneStaff-v1.2.zip` 拖进 Fluffy Mod Manager，启用。
+
+装过 v1.0 / v1.1 的直接覆盖，**它带的新显隐脚本会替换掉旧的**。
 
 ## 效果
 
-- 剑盾形态按住 R 防御：法阵出现
+- 剑盾形态按住 R 防御：星钟法阵出现
 - 剑盾形态平时：法阵隐藏
-- 斧形态：法阵常显
+- 斧形态：双月刃常显
 
 ## 卸载
 
@@ -64,7 +62,7 @@ Fluffy 里取消勾选或删除。
 - 主页：[space.bilibili.com/2438342](https://space.bilibili.com/2438342)
 - 本 mod 不分发它，也不依赖它。法杖配饰的造型参考了那个角色的设计。
 
-v1.1 的几何经由 Tripo AI 重拓扑回传，再在 Blender 里做保形精修与材质调整；打包用 [ree-pak-cli](https://github.com/NSACloud/ree-pak-cli)，网格导入导出用 RE-Mesh-Editor。
+几何经由 Tripo AI 重拓扑回传，再在 Blender 里做保形精修、双态拆分与材质调整；打包用 [ree-pak-cli](https://github.com/NSACloud/ree-pak-cli)，网格导入导出用 RE-Mesh-Editor。
 
 ## 许可
 
