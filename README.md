@@ -8,13 +8,24 @@
 
 实机：
 
-| 剑盾形态 | 防御中 | 斧形态 |
-|---|---|---|
-| ![](previews/sword.png) | ![](previews/defend.png) | ![](previews/axe.png) |
+| 持杖 | 斧形态 |
+|---|---|
+| ![](previews/game_staff.jpg) | ![](previews/game_axe.jpg) |
+
+杖头特写与斜视：![](previews/head_closeup.jpg) ![](previews/weapon_tilt.jpg)
 
 ## 下载
 
-[RuneStaff-v1.0.zip](RuneStaff-v1.0.zip)
+[RuneStaff-v1.1.zip](RuneStaff-v1.1.zip)
+
+## 更新（v1.1）
+
+- **杖头**：回到原始设计做保形精修——双环、斜向三齿、长针、蓝色轴心与挂饰都保留，补了局部倒角与曲面修整，清掉退化薄片。
+- **杖身**：重建连续杆体、缠带与尾环，修掉重拓扑留下的断续和碎面。
+- **材质**：金属、深蓝表面、宝石分区控制反射与粗糙度，不再整根一个手感；法阵改用平坦法线，不再吃原版武器的凹凸贴图。
+- **法阵**：发光单独控制，外环与指针更清楚；蓝膜加了柔和渐变，星纹提亮。
+
+v1.0 → v1.1 是同一套设计的一次精修，替换目标、安装方式、法阵显隐逻辑都没有变。
 
 ## 前置
 
@@ -23,7 +34,7 @@
 
 ## 安装
 
-把 `RuneStaff-v1.0.zip` 拖进 Fluffy Mod Manager，启用。
+把 `RuneStaff-v1.1.zip` 拖进 Fluffy Mod Manager，启用。
 
 ## 效果
 
@@ -52,6 +63,8 @@ Fluffy 里取消勾选或删除。
 
 - 主页：[space.bilibili.com/2438342](https://space.bilibili.com/2438342)
 - 本 mod 不分发它，也不依赖它。法杖配饰的造型参考了那个角色的设计。
+
+v1.1 的几何经由 Tripo AI 重拓扑回传，再在 Blender 里做保形精修与材质调整；打包用 [ree-pak-cli](https://github.com/NSACloud/ree-pak-cli)，网格导入导出用 RE-Mesh-Editor。
 
 ## 许可
 
