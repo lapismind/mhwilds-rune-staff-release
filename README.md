@@ -4,56 +4,56 @@
 
 替换武器：**白炽斧耶利米 / 炽光斧耶利米**
 
-![](previews/axe.jpg)
+![v1.3 双月斧实机](previews/axe.jpg)
 
-实机：
-
-| 剑盾形态 · 防御中 | 站立 |
+| 剑盾形态 · 透明蓝色法阵 | 持杖造型（早期截图） |
 |---|---|
-| ![](previews/shield.jpg) | ![](previews/stance.jpg) |
+| ![v1.3 防御法阵实机](previews/shield.jpg) | ![持杖造型](previews/stance.jpg) |
 
 ## 下载
 
-[RuneStaff-v1.2.zip](RuneStaff-v1.2.zip)
+[RuneStaff-v1.3.zip](RuneStaff-v1.3.zip)
 
-## 更新（v1.2）
+## 更新（v1.3）
 
-- **法阵改成双态**：剑盾形态举盾防御时浮现完整的星钟法阵；切到斧形态，法阵内面变成两把新月刃，共用外圈与罗马数字环。两态靠读取武器形态切换，不延迟、不需要额外动作。
-- **蓝膜光感**：盾面与月牙各自一套 2048×512 图集，中心降低饱和度、向边缘过渡到冷蓝；粗糙度从中心约 0.48 过渡到边缘约 0.32，法线只加低幅缓曲率。
-- **蓝色轴心**换成独立的抛光宝石材质。
-- **杖头与颈部**局部曲面精修。
+- **透明能量膜**：法阵可以透出后方角色与场景，膜面保留蓝色。
+- **完整圆形盾膜**：能量膜铺至钟圈内缘，不再是内接多边形。
+- **青蓝发光**：强化边缘、膜内弧纹与中心层次，双月斧同步更新。
+- 保留剑盾完整法阵 / 斧态双月的切换、原钥匙杖头与蓝色轴心。
+
+本版已由作者实机验收；上方盾、斧截图均来自 v1.3 定稿。
 
 ## 前置
 
-- REFramework。没有它 `pak_mods` 不加载，mod 无效。
+- REFramework。
 - REFramework → Advanced Options → 打开 **Alternate PAK Folder**。
+- Fluffy Mod Manager。
 
 ## 安装
 
-把 `RuneStaff-v1.2.zip` 拖进 Fluffy Mod Manager，启用。
+先在 Fluffy 中停用旧版，再把 `RuneStaff-v1.3.zip` 拖进 Fluffy Mod Manager 并启用。
 
-装过 v1.0 / v1.1 的直接覆盖，**它带的新显隐脚本会替换掉旧的**。
+包内包含 `RuneStaff.pak` 和 `reframework/autorun/rune_guard_circle.lua`，请整套更新。新版脚本与五组材质配套，勿混用旧版脚本。
+
+如果曾手动安装本 mod 的 patch pak，应先移出对应旧文件，避免与 Fluffy 版重复加载。
 
 ## 效果
 
-- 剑盾形态按住 R 防御：星钟法阵出现
-- 剑盾形态平时：法阵隐藏
-- 斧形态：双月刃常显
+- 剑盾形态按住防御：完整星钟法阵出现；放下防御后短暂保留，再隐藏。
+- 斧形态：发光双月刃常显。
 
 ## 卸载
 
-Fluffy 里取消勾选或删除。
+Fluffy 中停用本 mod。
 
 ## 排错
 
 | 症状 | 处理 |
 |---|---|
-| 没有任何变化 | 检查 REFramework 和 Alternate PAK Folder |
-| 杖身是默认材质 | 贴图没读到，反馈一下 |
-| 防御时法阵不出 | 确认 `<游戏目录>\reframework\autorun\rune_guard_circle.lua` 在。日志：`<游戏目录>\reframework\data\rune_guard_circle.log` |
-| 法阵闪烁 | 装过 ArmorVariantManager 且配过这把武器的显隐。删掉 `reframework\data\ArmorVariantManager\it0900_0021.json` |
-
-不需要"防御时才显示"的话，删掉 `rune_guard_circle.lua`，法阵就常显。
+| 没有任何变化 | 检查 REFramework、Alternate PAK Folder，以及旧版是否重复加载 |
+| 材质不对或透明膜不见 | 确认 pak 与 Lua 都来自 v1.3，并停用旧版本后重新启用 |
+| 防御时法阵不出 | 确认游戏目录下 `reframework/autorun/rune_guard_circle.lua` 在；日志为 `reframework/data/rune_guard_circle.log` |
+| 法阵闪烁或两态混在一起 | 若 ArmorVariantManager 配过这把武器，将其 `reframework/data/ArmorVariantManager/it0900_0021.json` 备份并改为 `.off` |
 
 ## 附注
 
